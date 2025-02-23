@@ -1,0 +1,60 @@
+title: Artikel einreichen  
+description: Formular zum Einreichen neuer Artikel.  
+
+fields:  
+  title:  
+    label: Titel  
+    type: text  
+    required: true  
+
+  subtitle:  
+    label: Untertitel  
+    type: text  
+
+  author:  
+    label: Autor  
+    type: text  
+    required: true  
+
+  date:  
+    label: Veröffentlichungsdatum  
+    type: date  
+    required: true  
+    default: today  
+
+  category:  
+    label: Kategorie  
+    type: select  
+    options:  
+      - News  
+      - Meinung  
+      - Interview  
+      - Reportage  
+      - Sonstiges  
+    required: true  
+
+  text:  
+    label: Artikelinhalt  
+    type: textarea  
+    size: large  
+    buttons:  
+      - bold  
+      - italic  
+      - link  
+      - email  
+      - unorderedList  
+      - orderedList  
+      - quote  
+    required: true  
+
+  image:  
+    label: Titelbild  
+    type: files  
+    max: 1  
+    layout: cards  
+    required: true  
+
+  tags:  
+    label: Tags  
+    type: tags  
+    help: Mehrere Tags durch Komma trennen.  
