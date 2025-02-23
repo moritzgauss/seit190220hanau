@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.header-title {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: text-decoration 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
